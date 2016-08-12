@@ -10,7 +10,7 @@ class NumeralTransformer extends Fractal\TransformerAbstract
 	{
 	    return [
 	        'integer'      => (int) $numeral->id,
-	        'roman'   => $numeral->roman,
+	        'roman_numeral'   => $numeral->roman,
 	        'conversion_count'    => (int) $numeral->count,
 	        'last_converted' => $numeral->updated_at->toDateTimeString()
 	    ];
